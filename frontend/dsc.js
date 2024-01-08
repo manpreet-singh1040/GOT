@@ -51,7 +51,7 @@ button.addEventListener('click',async ()=>{
         
         let firstName=input.value;
         
-        let res=await fetch(`http://localhost:3001/`,{
+        let res=await fetch(`https://jons.azurewebsites.net/`,{
             method:'post',
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify({firstName,loc})
